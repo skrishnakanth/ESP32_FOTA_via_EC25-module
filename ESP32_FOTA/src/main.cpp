@@ -219,8 +219,8 @@ void EC25_WEB_CONN()
   EC25.println("AT+QHTTPURL=41,120");
   EC25_response(1000);
   delay(2000);
-  ESP32.println("http://103.207.4.72:8050/files/blink1.bin");
-  EC25.println("http://103.207.4.72:8050/files/blink1.bin");
+  ESP32.println("http://**********************/blink1.bin"); // Mention PATH name for BIN file download
+  EC25.println("http://***********************/blink1.bin");
   EC25_response(1000);
   delay(2000);
   ESP32.println("AT+QHTTPGET=80");
